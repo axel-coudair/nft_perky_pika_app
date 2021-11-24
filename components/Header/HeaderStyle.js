@@ -10,9 +10,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#fff",
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
+        backgroundImage: "url('./background_header.png')",
     }
 }));
 
