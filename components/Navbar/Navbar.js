@@ -6,11 +6,16 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from '@mui/material/Link';
+import useStyles from './NavbarStyle';
+
 
 export default function Navbar() {
+    const classes = useStyles();
+
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar className={classes.block_navbar} position="static">
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -21,10 +26,13 @@ export default function Navbar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
-                    </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="inherit">Home</Button>
+                    <Button color="inherit">Profile</Button>
+                    <Button color="inherit">Marketplace</Button>
+                    <Button color="inherit">Lore</Button>
+                    <Button color="inherit">Mint</Button>
+                    <Button color="inherit">Discord</Button>
+                    <Button color="inherit">Twitter</Button>
                 </Toolbar>
             </AppBar>
         </Box>
