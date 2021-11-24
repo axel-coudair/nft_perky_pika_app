@@ -2,12 +2,17 @@ import React from "react";
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { StylesContext } from '@mui/styles';
+import useStyles from './HeaderStyle';
 
 
-export default function Navbar() {
+
+export default function Header() {
+    const style = useStyles();
+
     return (
-        <Box sx={{ flexGrow: 1 }}>
-           <h1 className={}>Header</h1>
+        <Box className={style.block_header} sx={{ flexGrow: 1 }}>
+           <img className={style.block_header_img} src="/logo.png" />
         </Box>
     );
 }

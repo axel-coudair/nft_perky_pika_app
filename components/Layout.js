@@ -1,5 +1,5 @@
 import Navbar from "./Navbar/Navbar"
-import Navbar from "./Header/Header"
+import Header from "./Header/Header"
 
 
 const Layout = ({ children }) => {
