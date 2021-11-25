@@ -13,7 +13,7 @@ const useStyles = createUseStyles({
         backgroundSize: "cover",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
-        backgroundColor: 'red',
+        backgroundImage: "url('./background_header.png')",
     },
 });
 

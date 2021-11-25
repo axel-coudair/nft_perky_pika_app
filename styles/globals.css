@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Avenixel';
+  src: url('../public/Avenixel-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
@@ -18,3 +25,4 @@ a {
 body {
   background-color: #939633;
 }
+
