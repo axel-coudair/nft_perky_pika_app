@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
         backgroundImage: "url('./background_header.png')",
-    }
+    },
 }));
 
 export default useStyles;

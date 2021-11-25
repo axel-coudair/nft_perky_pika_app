@@ -11,10 +11,9 @@ import useStyles from './NavbarStyle';
 
 
 export default function Navbar() {
-    const classes = useStyles();
+    const styles = useStyles();
 
     return (
-        <>
         <nav className="block_navbar navbar navbar-expand-md navbar-light">
             <div className="container-fluid">
                 <div className="d-flex flex-grow-1 justify-content-between justify-content-md-start">
@@ -48,8 +47,19 @@ export default function Navbar() {
                     </ul>
                 </div>
             </div>
-        </nav>
-    </>
+            <style jsx>{`
+                .block_navbar {
+                    color: #000;
+                    position: absolute;
+                }
+                @media (max-width: 992px) {
+                    .block_navbar {
+                        position: initial;
+                        background: #fff;
+                    }
+                  }
 
+            `}</style>
+        </nav>
     );
 }

@@ -8,12 +8,29 @@ import 'bootstrap/dist/css/bootstrap.css'; // Add this line
 
 
 export default function Header() {
-    const classes = useStyles();
+    const styles = useStyles();
 
     return (
-        <Box className={classes.block_header} sx={{ flexGrow: 1 }}>
-            <button className="btn btn-primary m-3">Button Primary</button>
-           <img className={classes.block_header_img} src="/logo.png" />
-        </Box>
+        <>
+         <div className="block_header">
+            <img className="block_header_img" src="/logo.png" />
+        </div>
+        <style jsx>{`
+            .block_header {
+                min-height: 100vh;
+                padding: 4rem 0;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                background-image: url('/background_header.png');
+                background-size: cover;
+                background-position: top center;
+                background-repeat: no-repeat;
+            }
+            `}</style>
+        </>
     );
 }
