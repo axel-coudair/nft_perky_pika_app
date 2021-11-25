@@ -1,6 +1,6 @@
-import { makeStyles } from "@mui/styles";
+import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = createUseStyles({
     block_navbar: {
         backgroundColor: 'transparent',
         color: '#000',
@@ -12,6 +12,6 @@ const useStyles = makeStyles((theme) => ({
     //     backgroundColor: 'red',
 
     // }
-}));
+});
 
 export default useStyles;

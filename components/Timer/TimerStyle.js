@@ -1,7 +1,6 @@
+import { createUseStyles } from 'react-jss'
 
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = createUseStyles({
     timerNumber: { textAlign: "center", fontWeight: "bold", fontSize: "80px" },
     timerLabel: { textAlign: "center", fontWeight: "bold" },
     timerContainer: { maxWidth: "800px" },
@@ -14,6 +13,6 @@ const useStyles = makeStyles((theme) => ({
         timerLabel: { fontSize: "12px" },
         timerNumber: { fontSize: "50px" }
     }
-}));
+});
 
 export default useStyles;

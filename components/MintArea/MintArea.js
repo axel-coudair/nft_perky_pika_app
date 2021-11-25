@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Timer from '../Timer/Timer';
 import CustomButton from '../CustomButton/CustomButton';
 import useStyles from './MintAreaStyle';
-import { Card, Typography, CardContent} from '@mui/material';
 
 export default function MintArea() {
     const classes = useStyles()
@@ -17,16 +16,6 @@ export default function MintArea() {
     const [candyMachine, setCandyMachine] = useState({});
     return (
         <div>
-            <Timer startDate={startDate} />
-            <CustomButton>Mint</CustomButton>
-            <span className={classes.countSpan}>8757/6589</span>
-            <Card className={classes.countSpan}>
-                <CardContent>
-                    <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                        Word of the Day
-                    </Typography>
-                </CardContent>
-            </Card>
-        </div>
+            <Timer startDate={startDate} /></div>
     )
 }
