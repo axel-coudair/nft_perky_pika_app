@@ -14,27 +14,42 @@ export default function Navbar() {
     const classes = useStyles();
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar className={classes.block_navbar} position="static">
-                <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Button color="inherit">Home</Button>
-                    <Button color="inherit">Profile</Button>
-                    <Button color="inherit">Marketplace</Button>
-                    <Button color="inherit">Lore</Button>
-                    <Button color="inherit">Mint</Button>
-                    <Button color="inherit">Discord</Button>
-                    <Button color="inherit">Twitter</Button>
-                </Toolbar>
-            </AppBar>
-        </Box>
+        <>
+        <nav className="block_navbar navbar navbar-expand-md navbar-light">
+            <div className="container-fluid">
+                <div className="d-flex flex-grow-1 justify-content-between justify-content-md-start">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                    </button>
+                </div>   
+                <div className="collapse navbar-collapse" id="navbarToggle">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Home</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Profile</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Marketplace</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Lore</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Mint</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Discord</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#" target="blank">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </>
+
     );
 }

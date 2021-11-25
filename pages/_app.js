@@ -2,8 +2,13 @@ import Layout from '../components/Layout'
 import '../styles/globals.css'
 import Head from 'next/head'
 import Script from 'next/script'
+import "bootstrap/dist/css/bootstrap.css";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+}, []);
   return (
     <>
       <Head>
