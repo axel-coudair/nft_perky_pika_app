@@ -8,11 +8,11 @@ import useStyles from './HeaderStyle';
 
 
 export default function Header() {
-    const style = useStyles();
+    const classes = useStyles();
 
     return (
-        <Box className={style.block_header} sx={{ flexGrow: 1 }}>
-           <img className={style.block_header_img} src="/logo.png" />
+        <Box className={classes.block_header} sx={{ flexGrow: 1 }}>
+           <img className={classes.block_header_img} src="/logo.png" />
         </Box>
     );
 }
