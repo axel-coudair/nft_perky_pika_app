@@ -1,6 +1,6 @@
-import { makeStyles } from "@mui/styles";
+import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = createUseStyles({
     customButton: {
         background: "#FF8D24",
         width: "200px",
@@ -8,6 +8,6 @@ const useStyles = makeStyles((theme) => ({
             background: "#bf6715",
         }
     }
-}));
+});
 
 export default useStyles;

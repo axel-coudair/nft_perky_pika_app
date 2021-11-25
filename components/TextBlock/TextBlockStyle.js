@@ -1,6 +1,6 @@
-import { makeStyles } from "@mui/styles";
+import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = createUseStyles({
     block_best_perkys: {
         backgroundColor: '#939633',
         padding: '4rem',
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     block_best_perkys_img: {
         maxWidth: '400px',
     }
-   
-}));
+
+});
 
 export default useStyles;

@@ -2,16 +2,15 @@ import React from "react";
 import useStyles from './HeaderStyle';
 import 'bootstrap/dist/css/bootstrap.css'; // Add this line
 
-
 export default function Header() {
     const classes = useStyles();
 
     return (
         <>
-         <div className={classes.block_header}>
-            <img className="block_header_img" src="/logo.png" />
-        </div>
-        {/* <style jsx>{`
+            <div className={"block_header"}>
+                <img className="block_header_img" src="/logo.png" />
+            </div>
+            <style jsx>{`
             .block_header {
                 min-height: 100vh;
                 padding: 4rem 0;
@@ -26,7 +25,7 @@ export default function Header() {
                 background-position: top center;
                 background-repeat: no-repeat;
             }
-            `}</style> */}
+            `}</style>
         </>
     );
 }

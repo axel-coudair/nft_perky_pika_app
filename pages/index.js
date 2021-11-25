@@ -1,12 +1,10 @@
 import Link from 'next/link'
-import { Button } from '@mui/material'
+import TextBlock from '../components/TextBlock/TextBlock';
 
 export default function Home() {
   return (
     <>
-      <Link href="/mint">
-        <Button variant="contained">Mint</Button>
-      </Link>
+      <TextBlock />
     </>
   )
 }
