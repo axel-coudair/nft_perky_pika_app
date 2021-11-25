@@ -1,6 +1,6 @@
-import { makeStyles } from "@mui/styles";
+import {createUseStyles} from 'react-jss'
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = createUseStyles({
     block_header: {
         minHeight: "100vh",
         padding: "4rem 0",
@@ -13,8 +13,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: "cover",
         backgroundPosition: "top center",
         backgroundRepeat: "no-repeat",
-        backgroundImage: "url('./background_header.png')",
+        backgroundColor: 'red',
     },
-}));
+});
 
 export default useStyles;

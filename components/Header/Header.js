@@ -1,21 +1,17 @@
 import React from "react";
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import { StylesContext } from '@mui/styles';
 import useStyles from './HeaderStyle';
 import 'bootstrap/dist/css/bootstrap.css'; // Add this line
 
 
 export default function Header() {
-    const styles = useStyles();
+    const classes = useStyles();
 
     return (
         <>
-         <div className="block_header">
+         <div className={classes.block_header}>
             <img className="block_header_img" src="/logo.png" />
         </div>
-        <style jsx>{`
+        {/* <style jsx>{`
             .block_header {
                 min-height: 100vh;
                 padding: 4rem 0;
@@ -30,7 +26,7 @@ export default function Header() {
                 background-position: top center;
                 background-repeat: no-repeat;
             }
-            `}</style>
+            `}</style> */}
         </>
     );
 }
