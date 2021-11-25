@@ -1,0 +1,8 @@
+.customButton {
+  background: #FF8D24;
+  border: none;
+  width: 200px;
+}
+.customButton:hover {
+  background: #bf6715;
+}

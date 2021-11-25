@@ -1,9 +1,7 @@
 import React from "react";
-import useStyles from './NavbarStyle';
 
 
 export default function Navbar() {
-    const styles = useStyles();
 
     return (
         <nav className="block_navbar navbar navbar-expand-md navbar-light">

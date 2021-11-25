@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Timer from '../components/Timer/Timer';
-import CustomButton from '../components/CustomButton/CustomButton';
-import MintArea from '../components/MintArea/MintArea';
+import Timer from '../components/Timer';
+import CustomButton from '../components/CustomButton';
+import MintArea from '../components/MintArea';
 
 
 export default function mint() {

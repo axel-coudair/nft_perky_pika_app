@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function TextBlock(){
+export default function TextBlock() {
     return (
         <section className="block_bestpikas py-4">
             <div className="container">
@@ -10,7 +10,7 @@ export default function TextBlock(){
                 </div>
                 <div className="row">
                     <div className="col-12 col-lg-5 d-flex justify-content-lg-start justify-content-center">
-                        <img className="block_best_perkys_img" src="/pikas.png"/>
+                        <img className="block_best_perkys_img" src="/pikas.png" />
                     </div>
                     <div className="col-12 col-lg-7 pt-5">
                         <p>Perky Pikas is a collection of 6,666 unique NFTs on the Solana blockchain. Pick up your Perky Pika to join us in the Pikaverse: help us create a rich community and expand on the Pika storyline.</p>
