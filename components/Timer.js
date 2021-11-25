@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
-import styles from '../styles/Timer.module.css'
+import styles from '../styles/Timer.module.scss'
 
 export default function Timer({ startDate = new Date('2021-11-29T00:00:00') }) {
     const [timeToStartArray, setTimeToStartArray] = useState([])

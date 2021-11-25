@@ -1,6 +1,6 @@
 
 import React from 'react'
-import styles from '../styles/CustomButton.module.css'
+import styles from '../styles/CustomButton.module.scss'
 
 export default function CustomButton({ children, classx = "", ...props }) {
     return (

@@ -20,7 +20,6 @@ export default function TextBlock() {
                 </div>
             </div>
             <style jsx>{`
-
                 .block_bestpikas {
                     color: #fff;
                 }

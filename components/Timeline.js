@@ -1,14 +1,14 @@
 import React from "react";
-import useStyles from './TimelineStyle';
 import 'bootstrap/dist/css/bootstrap.css';
 
-export default function Header() {
-    const classes = useStyles();
+import styles from '../styles/Timeline.module.scss'
+
+export default function Timeline() {
 
     return (
         <>
-            <div className={"block_roadmap"}>
-                <h1>TEST</h1>
+            <div className={styles.block_timeline}>
+                <h1>TESsT</h1>
             </div>
             <style jsx>{`
             .block_roadmap {
