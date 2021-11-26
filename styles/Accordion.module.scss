@@ -1,0 +1,22 @@
+.block_accordion {
+
+    .block_accordion_title {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .block_accordion_item_title {
+        border-radius: 8px;
+        background: #fff;
+        font-weight: bold;
+   }
+
+    .block_accordion_item {
+        border-radius: 8px;
+    }
+
+    .block_accordion_item_text {
+        color: #777E90;
+    }
+}
