@@ -1,0 +1,12 @@
+.block_footer {
+    min-height: 200px;
+    // background-image: url(/background_footer.png);
+    // background-color: #939633;
+    background-size: cover;
+    background-position: bottom;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
