@@ -27,6 +27,7 @@ body {
   background-image: url('/background_body.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 ul {

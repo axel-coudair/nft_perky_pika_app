@@ -14,7 +14,7 @@ export default function TextBlock() {
                     </div>
                     <div className="col-12 col-lg-7 pt-5">
                         <p>Perky Pikas is a collection of 6,666 unique NFTs on the Solana blockchain. Pick up your Perky Pika to join us in the Pikaverse: help us create a rich community and expand on the Pika storyline.</p>
-                        <h5 className="h4">Fully Customizble Pikas</h5>
+                        <h5 className="h4">Fully Customizable Pikas</h5>
                         <p>Earn $LEAF coin by being an engaged member of the community.  Spend $LEAF coin to buy items on the marketplace and kit your Pika out in your favourite gear!</p>
                     </div>
                 </div>
@@ -31,9 +31,10 @@ export default function TextBlock() {
                 .block_best_perkys_img {
                     max-width: 350px;
                 }
-                .block_bestpikas_title {
-                    font-family: 'M PLUS 1 Code', sans-serif;
+                .block_bestpikas_title h2 {
                     text-transform: uppercase;
+                    font-weight: bold;
+                    color: #fff;
                 }
                 @media (max-width: 992px) {
                     .block_navbar {
