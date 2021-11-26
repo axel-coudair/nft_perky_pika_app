@@ -9,9 +9,9 @@ export default function Team() {
         <>
             <section className={`${styles.block_team} py-4`}>
                 <div className="container">
-                    <h2 className={styles.block_team_title}>The perky pikas team</h2>
-                    <div className="row">
-                        <div className="col-12 col-md-6 col-lg-3">
+                    <h2 className={`${styles.block_team_title} mb-4`}>The perky pikas team</h2>
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
                             <div className={`${styles.block_team_card} d-flex justify-content-center py-3`}>
                                 <ul className={`${styles.block_team_card_container} d-flex flex-column`}>
                                     <li className="align-self-center">
@@ -26,7 +26,7 @@ export default function Team() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
                             <div className={`${styles.block_team_card} d-flex justify-content-center py-3`}>
                                 <ul className={`${styles.block_team_card_container} d-flex flex-column`}>
                                     <li className="align-self-center">
@@ -41,7 +41,7 @@ export default function Team() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
                             <div className={`${styles.block_team_card} d-flex justify-content-center py-3`}>
                                 <ul className={`${styles.block_team_card_container} d-flex flex-column`}>
                                     <li className="align-self-center">
@@ -56,7 +56,7 @@ export default function Team() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-3">
+                        <div className="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
                             <div className={`${styles.block_team_card} d-flex justify-content-center py-3`}>
                                 <ul className={`${styles.block_team_card_container} d-flex flex-column`}>
                                     <li className="align-self-center">

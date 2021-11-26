@@ -9,7 +9,7 @@ export default function Timeline() {
         <>
             <section className={`${styles.block_timeline} py-4`}>
                 <div className="container">
-                    <h2 className={styles.block_timeline_title}>RoadMap</h2>
+                    <h2 className={`${styles.block_timeline_title} mb-4`}>RoadMap</h2>
                     <div className={styles.timeline}>
                         <div className={`${styles.timeline_container} ${styles.left}`}>
                             <div className={`${styles.timeline_content}`}>
