@@ -1,5 +1,4 @@
 .block_timeline {
-  min-height: 600px;
 
   .block_timeline_title {
     text-transform: uppercase;
@@ -39,16 +38,10 @@
     background-image: url('/background_card _timeline.png');
     background-size: cover;
     position: relative;
-    border-radius: 25px;
+    border-radius: 20px;
     min-height: 161px;
     color: #E9CF57;
     font-family: 'Avenixel';
-
-    .timeline_content_title {
-
-        
-    }
-
   }
 
   .right {

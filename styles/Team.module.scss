@@ -1,0 +1,26 @@
+.block_team {
+
+    .block_team_title {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .block_team_card {
+        background-image: url('/background_card_team.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-align:center;
+    }
+
+  .block_team_card_img {
+  }
+
+  .block_team_card_container {
+    max-width: 215px;
+    min-height: 258px;
+  }
+  
+
+}
