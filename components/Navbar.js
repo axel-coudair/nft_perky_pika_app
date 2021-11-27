@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 
 export default function Navbar() {
@@ -8,13 +9,17 @@ export default function Navbar() {
             <div className="container-fluid">
                 <div className="d-flex flex-grow-1 justify-content-between justify-content-md-start">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                </div>   
+                </div>
                 <div className="collapse navbar-collapse" id="navbarToggle">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#" target="blank">Home</a>
+                            <Link href="/" target="blank">
+                                <span className="nav-link">
+                                    Home
+                                </span>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#" target="blank">Profile</a>
@@ -25,9 +30,11 @@ export default function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link" href="#" target="blank">Lore</a>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" target="blank">Mint</a>
-                        </li>
+                        <Link href="/mint" target="blank">
+                            <a className="nav-link">
+                                Mint
+                            </a>
+                        </Link>
                         <li className="nav-item">
                             <a className="nav-link" href="#" target="blank">Discord</a>
                         </li>
