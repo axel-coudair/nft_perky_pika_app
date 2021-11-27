@@ -4,6 +4,7 @@ import styles from '../styles/Timer.module.scss'
 
 export default function Timer({ startDate = new Date('2021-11-29T00:00:00') }) {
     const [timeToStartArray, setTimeToStartArray] = useState([])
+    const [timeToStart, setTimeToStart] = useState(new Date(startDate - new Date()))
 
     const updateTimer = (timeToStart) => {
         setTimeToStartArray([{
@@ -23,26 +24,31 @@ export default function Timer({ startDate = new Date('2021-11-29T00:00:00') }) {
 
     useEffect(() => {
         const timer = setInterval(() => {
-            const timeToStart = new Date(startDate - new Date())
-            updateTimer(timeToStart)
+            setTimeToStart(new Date(startDate - new Date()))
         }, 1000);
         return () => clearInterval(timer);
     }, []);
 
     return (
-        new Date(startDate - new Date()) > 0 && <div className="container pt-5 pb-5 m-5" >
-            <div className={`${styles.timerContainer} row mx-auto`}>
-                {timeToStartArray.map((timeToStartItem, index) =>
-                    <div className={"col-3 "} key={index}>
-                        <div className={`${styles.timerNumber} col-12`}>
-                            <span className={styles.timerNumber}>{timeToStartItem.number}</span>
-                        </div>
-                        <div className={`${styles.timerLabel} col-12`}>
-                            <span>{timeToStartItem.label}</span>
-                        </div>
-                    </div>
-                )}
+        new Date(startDate - new Date()) > 0 &&
+        <>
+        <div className={`${styles.timerContainer} row mx-auto pt-5 mt-5`}>
+            <div className={`${styles.timerDays} col-12`}>
+                <span className={styles.timerDays}>
+                    {timeToStart.getDate()}
+                    {timeToStart.getDate() > 1 ? " DAYS" : " DAY"}
+                </span>
             </div>
-        </div >
+            </div>
+            <div className={`${styles.timerContainer} row mx-auto `}>
+                <div className={`${styles.timerNumber} col-12`}>
+                    <span className={styles.timerNumber}>
+                        {timeToStart.getHours()}.
+                        {timeToStart.getMinutes()}.
+                        {timeToStart.getSeconds()}
+                    </span>
+                </div>
+            </div>
+        </>
     )
 }

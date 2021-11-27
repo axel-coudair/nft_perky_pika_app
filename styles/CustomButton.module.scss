@@ -1,8 +1,15 @@
 .customButton {
-  background: #FF8D24;
+  background: #ff8d24;
   border: none;
-  width: 200px;
+  width: 255px;
+  height: 50px;
+  border-radius: 10px;
 }
 .customButton:hover {
   background: #bf6715;
+}
+.customButton:disabled {
+  background: #dbdbdb;
+  opacity: 1;
+  color: black;
 }
