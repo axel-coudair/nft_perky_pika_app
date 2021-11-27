@@ -1,17 +1,12 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Timer from '../components/Timer';
-import CustomButton from '../components/CustomButton';
+import React from 'react'
 import MintArea from '../components/MintArea';
-
+import HeaderMint from '../components/HeaderPages';
 
 export default function mint() {
     return (
         <>
-            <Link href="/">hjgjhv
-            </Link>
-            <MintArea/>
-
+            <HeaderMint image={"/title_images/title_image_mint.png"}/>
+            <MintArea />
         </>
     )
 }

@@ -1,0 +1,22 @@
+.block_header {
+  min-height: 50vh;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url("/background_header.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.block_header_img{
+  width:227px;
+}
+.block_header_title_img{
+  height:30px;
+  margin-top: 15px;
+}

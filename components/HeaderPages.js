@@ -1,12 +1,12 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.css'; // Add this line
-import styles from '../styles/Header.module.scss'
+import styles from '../styles/HeaderPages.module.scss'
 
-export default function Header() {
+export default function HeaderPages({ image }) {
 
     return (
         <div className={styles.block_header}>
             <img className={styles.block_header_img} src="/logo.png" />
+            <img className={styles.block_header_title_img} src={image} />
         </div>
     );
 }
