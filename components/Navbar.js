@@ -39,8 +39,24 @@ export default function Navbar() {
             </div>
             <style jsx>{`
                 .block_navbar {
-                    color: #000;
+                    color: #23262F;
                     position: absolute;
+                    width: 100%;
+                }
+                .navbar-light .navbar-nav .nav-link {
+                    color: #23262F;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+                    transition: text-decoration-color 300ms;
+                }
+                .navbar-light .navbar-nav .nav-link:hover {
+                    color: #23262F;
+                    text-transform: uppercase;
+                    text-decoration-color: #23262F;
+
+                font-weight: bold;
                 }
                 @media (max-width: 992px) {
                     .block_navbar {

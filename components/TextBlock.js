@@ -22,6 +22,8 @@ export default function TextBlock() {
             <style jsx>{`
                 .block_bestpikas {
                     color: #fff;
+                    margin-bottom: 4rem;
+
                 }
 
                 .block_bestpikas h5 {
