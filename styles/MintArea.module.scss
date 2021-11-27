@@ -13,10 +13,14 @@
   margin-right: auto;
 }
 .mintArea {
+  z-index: 1;
   width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.mintAreaCol {
+  z-index: 1;
 }
 .centerItem {
   display: block;
