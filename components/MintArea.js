@@ -37,9 +37,8 @@ export default function MintArea() {
                         </div>
                     </div>
                 </div>
-
                 <div className="col-md-4 py-2" >
-                    <img className={styles.centerItem} src="/mint_assets/pannel_count.png" />
+                    <img className={styles.centerItemOnMobile} src="/mint_assets/pannel_count.png" />
                 </div>
             </div >
         </div >
