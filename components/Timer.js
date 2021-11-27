@@ -32,7 +32,7 @@ export default function Timer({ startDate = new Date('2021-11-29T00:00:00') }) {
     return (
         new Date(startDate - new Date()) > 0 &&
         <>
-        <div className={`${styles.timerContainer} row mx-auto pt-5 mt-5`}>
+        <div className={`${styles.timerContainer} row mx-auto `}>
             <div className={`${styles.timerDays} col-12`}>
                 <span className={styles.timerDays}>
                     {timeToStart.getDate()}

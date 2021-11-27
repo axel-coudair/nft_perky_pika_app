@@ -9,31 +9,39 @@ export default function MintArea() {
 
     const [itemsAvailable, setItemsAvailable] = useState(0); // total nfts
     const [itemsRedeemed, setItemsRedeemed] = useState(); // total nfts minted
-    const [itemsRemaining, setItemsRemaining] = useState(); // nft left
+    const [itemsRemaining, setItemsRemaining] = useState(0); // nft left
     const [startDate, setStartDate] = useState(); // when minting starts
     const [remainingTime, setRemainingTime] = useState(new Date(new Date('2021-11-29T00:00:00') - new Date()))
     const [candyMachine, setCandyMachine] = useState({});
+    const mintIsDisabled = remainingTime > 0
     return (
 
-        <div className="container">
+        <div className="container ">
             <div className="row" >
-                < div className="col-xs-12" >
+                < div className="col-md-4" >
+                </div>
+                < div className={`col-md-4 py-5 mt-5  ${styles.mintAreaCol}`} >
                     < div className={styles.mintArea} >
-                        <Timer startDate={startDate} />
+                        {remainingTime > 0 ? <Timer startDate={startDate} /> : ""}
                         < div className="d-flex justify-content-center" >
-                            <CustomButton disabled>Mint</CustomButton>
+                            {mintIsDisabled ?
+                                <CustomButton disabled>Mint</CustomButton>
+                                :
+                                <CustomButton >Mint</CustomButton>
+                            }
                         </div>
                         <div className={styles.remaingItemsDiv}>
                             <span>
-                                6576/7867
+                                {itemsRemaining}/{itemsAvailable}
                             </span>
                         </div>
                     </div>
                 </div>
+
+                <div className="col-md-4 py-2" >
+                    <img className={styles.centerItem} src="/mint_assets/pannel_count.png" />
+                </div>
             </div >
-            <div>
-                <img className={styles.mintPikaPanel} src="/mint_assets/pannel_count.png" />
-            </div>
         </div >
     )
 }
